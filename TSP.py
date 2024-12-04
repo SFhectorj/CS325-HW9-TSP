@@ -5,13 +5,18 @@ def solve_tsp(G):
     """
     # Initialize
     number_of_cities = len(G)
-    cities_already_visited =
+    # Will start as false since no cities have been visited
+    cities_already_visited = [False] * number_of_cities
     travel_path = []
     current_city = 0 # Starts from the first node
 
     # Begin with starting city
     travel_path.append(current_city)
     cities_already_visited[current_city] = True
+
+    # Iteration to visit cities
+    for visit in range(number_of_cities - 1):
+        closest_neighboring_city = None
 
 
     return

@@ -15,8 +15,10 @@ def solve_tsp(G):
     cities_already_visited[current_city] = True
 
     # Iteration to visit cities
+    # exclude the city we're starting from
     for visit in range(number_of_cities - 1):
         closest_neighboring_city = None
+        #
 
 
     return

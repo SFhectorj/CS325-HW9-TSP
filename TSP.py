@@ -7,4 +7,5 @@ def solve_tsp(G):
     number_of_cities = len(G)
     cities_already_visited =
     travel_path = []
+    current_city = 0 # Starts from the first node
     return

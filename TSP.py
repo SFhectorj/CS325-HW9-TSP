@@ -21,11 +21,13 @@ def solve_tsp(G):
         # Initialize with infinity
         closest_city_distance = float('inf')
         # implement loop to find the nearest neighbor
-        for closest_neighboring_city in range(number_of_cities):
-            # Requirement 1: Edge exists and has not been visited
-            if not cities_already_visited[closest_neighboring_city] and G[current_city][closest_neighboring_city] > 0:
-                # Requirement 2:
-                if G[current_city][closest_neighboring_city] < closest_city_distance:
+        for neighboring_city in range(number_of_cities):
+            # Requirements: Edge exists and has not been visited
+            if not cities_already_visited[neighboring_city] and G[current_city][neighboring_city] > 0:
+                if G[current_city][neighboring_city] < closest_city_distance:
+                    closest_neighboring_city = neighboring_city
+                    closest_city_distance = G[current_city][neighboring_city]
+
 
 
 

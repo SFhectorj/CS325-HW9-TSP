@@ -24,6 +24,9 @@ def solve_tsp(G):
         for closest_neighboring_city in range(number_of_cities):
             # Requirement 1: Edge exists and has not been visited
             if not cities_already_visited[closest_neighboring_city] and G[current_city][closest_neighboring_city] > 0:
+                # Requirement 2:
+                if G[current_city][closest_neighboring_city] < closest_city_distance:
+
 
 
 

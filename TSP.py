@@ -32,6 +32,8 @@ def solve_tsp(G):
             # Transfer nearest neighbor to travel path
             travel_path.append(closest_neighboring_city)
             cities_already_visited[closest_neighboring_city] = True
+            # update current city to continue process
+            current_city = closest_neighboring_city
 
 
 

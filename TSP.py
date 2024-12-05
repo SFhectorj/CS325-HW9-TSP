@@ -29,7 +29,9 @@ def solve_tsp(G):
                     closest_city_distance = G[current_city][neighboring_city]
 
         if closest_neighboring_city is not None:
+            # Transfer nearest neighbor to travel path
             travel_path.append(closest_neighboring_city)
+            cities_already_visited[closest_neighboring_city] = True
 
 
 
